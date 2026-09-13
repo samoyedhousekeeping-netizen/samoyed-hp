@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家事＆清掃代行サービス サモエド｜函館市・道南エリア対応</title>
+<meta name="description" content="北海道函館市・道南エリア対応の家事＆清掃代行サービス サモエド。時間コース・定期コース・箇所指定コースなど、ご家庭に合わせた清掃・家事代行をご提供します。">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Meiryo', sans-serif;
+    background: #EBF4FB;
+    color: #1a1a1a;
+    min-height: 100vh;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* ヘッダー・ナビ */
+  .site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 12px rgba(91,174,232,0.12);
+  }
+  .header-inner {
+    max-width: 900px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px;
+  }
+  .header-brand { font-size: 15px; font-weight: 700; color: #1a1a1a; white-space: nowrap; }
+  .header-brand span { color: #5BAEE8; }
+  .nav-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .nav-links { display: flex; gap: 4px; padding: 0 16px 10px; max-width: 900px; margin: 0 auto; }
+  .nav-links a {
+    font-size: 12px; font-weight: 600; color: #3d96d6;
+    background: #EBF4FB; padding: 7px 12px; border-radius: 99px;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .nav-links a.cta { background: #5BAEE8; color: #fff; }
+
+  .container { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; padding: 20px 16px 40px; }
+
+  /* ヒーロー */
+  .hero { max-width: 900px; margin: 0 auto; padding: 0 16px 4px; }
+  .hero-img { width: 100%; border-radius: 16px; display: block; box-shadow: 0 8px 30px rgba(91,174,232,0.18); }
+  .hero-catch {
+    text-align: center; margin-top: 18px;
+  }
+  .hero-catch h1 { font-size: 20px; font-weight: 700; color: #1a1a1a; line-height: 1.6; }
+  .hero-catch p { font-size: 13px; color: #5BAEE8; margin-top: 6px; font-weight: 600; }
+  .hero-btns { display: flex; gap: 10px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; font-size: 13px; font-weight: 700;
+    padding: 12px 22px; border-radius: 99px;
+  }
+  .btn-primary { background: #5BAEE8; color: #fff; box-shadow: 0 4px 14px rgba(91,174,232,0.35); }
+  .btn-outline { background: #fff; color: #5BAEE8; border: 1.5px solid #5BAEE8; }
+
+  .brand { text-align: center; padding: 8px 0; }
+  .brand-name { font-size: 22px; font-weight: 700; color: #1a1a1a; }
+  .brand-sub { font-size: 13px; color: #5BAEE8; margin-top: 4px; }
+
+  .monitor-banner {
+    background: linear-gradient(135deg, #fff8e7, #fff3d4);
+    border: 1.5px solid #f4a261;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #7d5a00;
+    text-align: center;
+  }
+
+  .section-anchor { scroll-margin-top: 96px; }
+
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(91,174,232,0.12);
+    padding: 24px;
+  }
+  .card-title {
+    font-size: 13px; font-weight: 700; color: #5BAEE8;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    padding-bottom: 12px; border-bottom: 1.5px solid #EBF4FB;
+  }
+
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .price-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; font-size: 13px; min-width: 280px; }
+  .price-table thead tr th {
+    background: #5BAEE8; color: #fff;
+    padding: 8px 12px; font-weight: 600; text-align: left;
+  }
+  .price-table thead tr th:first-child { border-radius: 8px 0 0 8px; }
+  .price-table thead tr th:last-child { border-radius: 0 8px 8px 0; text-align: right; }
+  .price-table tbody tr td {
+    background: #F7FBFF;
+    padding: 10px 12px;
+    border-top: 1px solid #EBF4FB;
+    border-bottom: 1px solid #EBF4FB;
+    font-size: 13px; color: #1a1a1a;
+  }
+  .price-table tbody tr td:first-child { border-left: 1px solid #EBF4FB; border-radius: 8px 0 0 8px; font-weight: 500; }
+  .price-table tbody tr td:last-child { border-right: 1px solid #EBF4FB; border-radius: 0 8px 8px 0; text-align: right; font-weight: 700; color: #2e86c1; }
+  .price-monitor { color: #e67e22; font-weight: 700; }
+  .price-note { font-size: 12px; color: #5BAEE8; margin-top: 10px; }
+
+  .row {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid #EBF4FB;
+    font-size: 13px;
+  }
+  .row:last-child { border-bottom: none; padding-bottom: 0; }
+  .row-label { color: #5BAEE8; min-width: 100px; font-weight: 600; flex-shrink: 0; }
+  .row-value { color: #1a1a1a; line-height: 1.8; }
+
+  .tag {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 99px; margin: 2px 3px 2px 0;
+  }
+  .tag-blue { background: #EBF4FB; color: #3d96d6; }
+  .tag-orange { background: #fff3e0; color: #e67e22; }
+
+  .staff-grid { display: flex; gap: 12px; flex-wrap: wrap; }
+  .staff-card {
+    flex: 1; min-width: 200px;
+    background: #F7FBFF; border-radius: 12px;
+    padding: 16px; border: 1px solid #EBF4FB;
+  }
+  .staff-icon { font-size: 28px; margin-bottom: 6px; }
+  .staff-name { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .staff-desc { font-size: 12px; color: #555; line-height: 1.8; }
+
+  .area-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0; border-bottom: 1px solid #EBF4FB; font-size: 13px;
+  }
+  .area-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .area-name { color: #1a1a1a; font-weight: 500; }
+  .area-fee { color: #5BAEE8; font-weight: 700; }
+
+  .pay-grid { display: flex; gap: 12px; }
+  .pay-card {
+    flex: 1; background: #F7FBFF; border-radius: 10px;
+    padding: 14px; text-align: center; border: 1px solid #EBF4FB;
+  }
+  .pay-icon { font-size: 26px; margin-bottom: 6px; }
+  .pay-label { font-size: 13px; font-weight: 600; color: #1a1a1a; }
+
+  .cancel-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0; border-bottom: 1px solid #EBF4FB; font-size: 13px;
+  }
+  .cancel-row:last-child { border-bottom: none; }
+  .cancel-label { color: #555; }
+  .cancel-fee-bad { font-weight: 700; color: #e74c3c; }
+  .cancel-fee-good { font-weight: 700; color: #27ae60; }
+  .cancel-good-row {
+    background: #EAF6F0; border-radius: 10px;
+    padding: 12px; margin-top:10px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 13px;
+  }
+
+  .note-list { display: flex; flex-direction: column; gap: 10px; }
+  .note-item { display: flex; gap: 10px; font-size: 13px; color: #555; line-height: 1.6; align-items: flex-start; }
+  .note-icon { flex-shrink: 0; }
+
+  .contact-list { display: flex; flex-direction: column; gap: 10px; }
+  .contact-item {
+    display: flex; align-items: center; gap: 12px;
+    background: #F7FBFF; border-radius: 10px;
+    padding: 12px 16px; border: 1px solid #EBF4FB;
+  }
+  .contact-item.link-item { transition: box-shadow .15s ease; }
+  .contact-icon { font-size: 22px; flex-shrink: 0; }
+  .contact-label { font-size: 11px; color: #5BAEE8; font-weight: 600; margin-bottom: 2px; }
+  .contact-value { font-size: 13px; font-weight: 500; color: #1a1a1a; }
+
+  .footer-cta {
+    background: linear-gradient(135deg,#5BAEE8,#3d96d6);
+    border-radius: 16px; padding: 26px 22px; text-align: center; color: #fff;
+  }
+  .footer-cta h2 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+  .footer-cta p { font-size: 12px; opacity: .92; margin-bottom: 16px; }
+  .footer-cta .btn-primary { background: #fff; color: #3d96d6; }
+
+  .footer { text-align: center; padding: 24px 16px; color: #8fa9c2; font-size: 12px; }
+  .footer .footer-links { margin-top: 8px; display: flex; gap: 14px; justify-content: center; }
+  .footer .footer-links a { color: #5BAEE8; font-weight: 600; }
+
+  .section-label {
+    font-size: 12px; font-weight: 700; color: #5BAEE8;
+    margin-bottom: 8px; margin-top: 4px;
+  }
+  .section-desc {
+    font-size: 12px; color: #888; margin-bottom: 12px; line-height: 1.7;
+  }
+  .divider {
+    margin: 20px 0; border: none; border-top: 1.5px solid #EBF4FB;
+  }
+
+  @media (min-width: 700px) {
+    .nav-links { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ヘッダー・ナビ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">🐾 <span>サモエド</span>｜家事＆清掃代行</div>
+  </div>
+  <div class="nav-scroll">
+    <nav class="nav-links">
+      <a href="#service">サービス</a>
+      <a href="#price">料金</a>
+      <a href="#staff">スタッフ</a>
+      <a href="#area">エリア・受付</a>
+      <a href="#flow">ご利用の流れ</a>
+      <a href="#contact" class="cta">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <img src="ChatGPT Image 2026年9月12日 13_00_56.png" alt="家事＆清掃代行サービス サモエド" class="hero-img">
+  <div class="hero-catch">
+    <h1>🐾 家事＆清掃代行サービス　サモエド</h1>
+    <p>北海道函館市｜道南エリア対応</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary">お問い合わせ・ご予約</a>
+      <a href="#price" class="btn btn-outline">料金を見る</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- モニターバナー -->
+  <div class="monitor-banner">
+    🎉 <b>現在モニター価格でご提供中！</b>　まずはお気軽にご相談ください🐾
+  </div>
+
+  <!-- おすすめ家庭 -->
+  <div class="card section-anchor" id="service">
+    <div class="card-title">🏠 こんなご家庭におすすめ</div>
+    <div class="note-list">
+      <div class="note-item"><span class="note-icon">✅</span>共働きで家事の時間が取れないご家庭</div>
+      <div class="note-item"><span class="note-icon">✅</span>育児と仕事の両立でお疲れのパパ・ママ</div>
+      <div class="note-item"><span class="note-icon">✅</span>週末にまとめて家事を済ませたい方</div>
+      <div class="note-item"><span class="note-icon">✅</span>定期的なお掃除サポートを探している方</div>
+      <div class="note-item"><span class="note-icon">🏢</span>オフィス・店舗・会社の清掃をご依頼されたい法人様もお気軽にご相談ください！</div>
+    </div>
+  </div>
+
+  <!-- 時間コース -->
+  <div class="card section-anchor" id="price">
+    <div class="card-title">⏰ 時間コース</div>
+    <p class="section-desc">ご指定の時間内で、できるところまで丁寧に対応します。清掃はもちろん、洗濯・衣類ケア・草取り・雪かきも時間内であれば対応可能です。最大4時間まで。</p>
+    <div class="table-wrap"><table class="price-table">
+      <thead>
+        <tr>
+          <th>時間</th>
+          <th style="text-align:right">通常料金</th>
+          <th>モニター価格</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1時間</td><td style="text-align:right;color:#888">3,500円</td><td><span class="price-monitor">2,500円</span></td></tr>
+        <tr><td>2時間</td><td style="text-align:right;color:#888">7,000円</td><td><span class="price-monitor">5,000円</span></td></tr>
+        <tr><td>3時間</td><td style="text-align:right;color:#888">10,500円</td><td><span class="price-monitor">8,500円</span></td></tr>
+        <tr><td>4時間</td><td style="text-align:right;color:#888">14,000円</td><td><span class="price-monitor">11,000円</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="price-note">※ 5時間以上はお気軽にご相談ください。</p>
+    <p class="price-note">※ 基本2名でお伺いし、短時間で丁寧に仕上げます。状況により1名でのご対応になる場合があります。</p>
+  </div>
+
+  <!-- 定期コース -->
+  <div class="card">
+    <div class="card-title">🔄 定期コース</div>
+    <p class="section-desc">毎月継続してご利用いただける定期プランです。</p>
+    <div class="table-wrap"><table class="price-table">
+      <thead>
+        <tr><th>時間</th><th>月5〜10回</th><th>月10〜20回</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1時間</td><td><span class="price-monitor">¥32,000</span></td><td><span class="price-monitor">¥63,000</span></td></tr>
+        <tr><td>2時間</td><td><span class="price-monitor">¥63,000</span></td><td><span class="price-monitor">¥126,000</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="price-note">※ 詳細はお気軽にご相談ください。</p>
+  </div>
+
+  <!-- 箇所指定コース（スタンダード） -->
+  <div class="card">
+    <div class="card-title">📍 箇所指定コース（スタンダード）</div>
+    <p class="section-desc">ご希望の箇所に集中して丁寧に仕上げます。時間に追われないので、細かいところまでしっかり対応できます。料金は広さ・汚れの程度により変動します。</p>
+    <div class="table-wrap"><table class="price-table">
+      <thead>
+        <tr>
+          <th>箇所</th>
+          <th style="text-align:left">主な清掃内容</th>
+          <th>料金</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>リビング</td>
+          <td style="text-align:left;color:#555;font-weight:400">床掃除・家具拭き・巾木拭き</td>
+          <td>¥4,000〜</td>
+        </tr>
+        <tr>
+          <td>キッチン・ダイニング<br><span style="font-size:11px;color:#aaa;font-weight:400">スタンダード</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">シンク・コンロ・調理台・テーブル・床</td>
+          <td>¥5,000〜</td>
+        </tr>
+        <tr>
+          <td>キッチン・ダイニング<br><span style="font-size:11px;color:#e67e22;font-weight:400">フル（特掃）</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">スタンダード＋グリル・コンロ周り油汚れ除去・扉・壁面拭き上げ</td>
+          <td>¥8,000〜</td>
+        </tr>
+        <tr>
+          <td>換気扇<br><span style="font-size:11px;color:#e67e22;font-weight:400">特掃</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">レンジフード内部・フィルター・ファン・外枠洗浄</td>
+          <td>¥9,000〜</td>
+        </tr>
+        <tr>
+          <td>キッチン＋換気扇<br><span style="font-size:11px;color:#5BAEE8;font-weight:400">セット割</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">キッチン・ダイニングフル＋換気扇特掃セット</td>
+          <td>¥16,500〜</td>
+        </tr>
+        <tr>
+          <td>浴室<br><span style="font-size:11px;color:#aaa;font-weight:400">スタンダード</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">浴槽・壁・床・鏡・排水口周り</td>
+          <td>¥6,000〜</td>
+        </tr>
+        <tr>
+          <td>浴室<br><span style="font-size:11px;color:#e67e22;font-weight:400">フル（特掃）</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">スタンダード＋天井・カビ除去・目地洗浄・シャワーヘッド・蛇口</td>
+          <td>¥12,000〜</td>
+        </tr>
+        <tr>
+          <td>トイレ<br><span style="font-size:11px;color:#aaa;font-weight:400">スタンダード</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">便器・便座・床・ペーパーホルダー</td>
+          <td>¥4,000〜</td>
+        </tr>
+        <tr>
+          <td>トイレ<br><span style="font-size:11px;color:#e67e22;font-weight:400">フル（特掃）</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">スタンダード＋天井・壁面・扉拭き上げ</td>
+          <td>¥8,000〜</td>
+        </tr>
+        <tr>
+          <td>洗面台<br><span style="font-size:11px;color:#aaa;font-weight:400">スタンダード</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">洗面ボウル・鏡・棚・排水口周り・床</td>
+          <td>¥3,000〜</td>
+        </tr>
+        <tr>
+          <td>洗面台<br><span style="font-size:11px;color:#e67e22;font-weight:400">フル（特掃）</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">スタンダード＋蛇口・水栓まわり・収納内部・壁面清掃</td>
+          <td>¥6,000〜</td>
+        </tr>
+        <tr>
+          <td>玄関<br><span style="font-size:11px;color:#aaa;font-weight:400">スタンダード</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">たたき掃き・ドア枠周り・ポーチ・玄関フード（床掃き）・他</td>
+          <td>¥3,000〜</td>
+        </tr>
+        <tr>
+          <td>玄関<br><span style="font-size:11px;color:#e67e22;font-weight:400">フル（特掃）</span></td>
+          <td style="text-align:left;color:#555;font-weight:400">スタンダード＋たたき拭き掃除・靴箱内部清掃（棚板拭き・消臭・カビ除去）・玄関フード枠清掃・玄関フードガラス清掃（内外）・ドア本体拭き上げ・タイル目地洗浄・下駄箱上部拭き上げ</td>
+          <td>¥7,000〜</td>
+        </tr>
+        <tr>
+          <td>廊下コース</td>
+          <td style="text-align:left;color:#555;font-weight:400">廊下の掃き＋拭き・巾木拭き</td>
+          <td>¥2,500〜</td>
+        </tr>
+        <tr>
+          <td>廊下＋階段コース</td>
+          <td style="text-align:left;color:#555;font-weight:400">廊下＋階段の掃き＋拭き・手すり・巾木</td>
+          <td>¥4,500〜</td>
+        </tr>
+        <tr>
+          <td>居室（1部屋）</td>
+          <td style="text-align:left;color:#555;font-weight:400">床掃除・家具拭き・巾木拭き</td>
+          <td>¥3,000〜</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p class="price-note">※ フル（特掃）メニューは本格清掃が必要な場合にご利用いただけます。</p>
+    <p class="price-note">※ 壁の清掃は状態を確認の上で対応します。</p>
+    <p class="price-note">※ 基本2名でお伺いします。状況により1名でのご対応になる場合があります。</p>
+  </div>
+
+  <!-- 洗濯・衣類ケア -->
+  <div class="card">
+    <div class="card-title">👕 洗濯・衣類ケア</div>
+    <p class="section-desc">アパレル経験スタッフによる丁寧な対応です。</p>
+    <div class="table-wrap"><table class="price-table">
+      <thead>
+        <tr>
+          <th>メニュー</th>
+          <th>料金</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>洗濯＋干しセット（15枚まで）</td><td>¥3,000〜</td></tr>
+        <tr><td>洗濯＋干しセット（30枚まで）</td><td>¥4,000〜</td></tr>
+
+        <tr><td>アイロン（5枚まで）</td><td>¥2,000〜</td></tr>
+      </tbody>
+    </table></div>
+    <p class="price-note">※ 洗濯＋干しセットは、干す場所（室内・屋外・物干しの高さなど）や状況により料金が変動します。まずはご相談ください。</p>
+    <p class="price-note">※ アイロンは洗濯表示を確認して対応します。</p>
+    <p class="price-note">※ 洗濯表示のないもの・複雑なデザインのものはお断りする場合があります。</p>
+  </div>
+
+  <!-- 繁忙期割増 -->
+  <div class="card">
+    <div class="card-title">📅 繁忙期割増料金について</div>
+    <div style="background:#fff8e7;border:1.5px solid #f4a261;border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <p style="font-size:13px;color:#7d5a00;line-height:1.8">
+        以下の繁忙期は、通常料金に <b>＋2,000円</b> の割増料金をいただきます。<br>
+        ご予約の際に事前にご案内いたします。
+      </p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div class="row"><span class="row-label">🎏 GW</span><span class="row-value">4月29日〜5月5日</span></div>
+      <div class="row"><span class="row-label">🏮 お盆</span><span class="row-value">8月13日〜16日</span></div>
+      <div class="row"><span class="row-label">🎍 年末年始</span><span class="row-value">12月29日〜1月5日</span></div>
+    </div>
+    <p class="price-note" style="margin-top:12px">※ 上記期間以外の祝日・連休は通常料金となります。</p>
+  </div>
+
+  <!-- その他サービス -->
+  <div class="card">
+    <div class="card-title">🍱 その他のサービス</div>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:14px">
+      清掃以外にも、料理・作り置き、ベビーシッター、軽微な修繕など、さまざまなご要望に対応しております。<br>
+      <b>まずはお気軽にご相談ください！</b>
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
+      <span class="tag tag-blue">🍱 料理・作り置き</span>
+      <span class="tag tag-blue">🧸 ベビーシッター</span>
+      <span class="tag tag-blue">🔧 軽微な修繕</span>
+    </div>
+    <div style="margin-top:14px;background:#EBF4FB;border-radius:10px;padding:14px 16px">
+      <p style="font-size:12px;font-weight:700;color:#5BAEE8;margin-bottom:6px">🍳 料理・作り置きについて</p>
+      <p style="font-size:12px;color:#555;line-height:1.8;margin-bottom:10px">
+        「凝ったお料理」より「普通においしい家庭料理」を求めているご家庭のほうが、実はずっと多いんです。<br>
+        毎日台所に立つスタッフが、<b>プロっぽいレストランの味</b>ではなく、<b>「子どもが食べやすい」「野菜たっぷり」「冷蔵庫にあるものでなんとかして！」</b>というご要望にお応えします😊<br>
+        「ある材料で何か作って！」というざっくりなご依頼も大歓迎です🎵
+      </p>
+      <p style="font-size:11px;font-weight:700;color:#555;margin-bottom:6px">🛒 スポット（単発）作り置きコース ／ 品数×人数で選べます</p>
+      <table class="price-table" style="margin-bottom:4px">
+        <thead>
+          <tr>
+            <th>品数</th>
+            <th style="text-align:right">1〜2人前</th>
+            <th style="text-align:right">3〜4人前</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2品</td><td style="text-align:right;color:#2e86c1;font-weight:700">¥2,500</td><td style="text-align:right;color:#2e86c1;font-weight:700">¥4,000</td></tr>
+          <tr><td>3品</td><td style="text-align:right;color:#2e86c1;font-weight:700">¥3,000</td><td style="text-align:right;color:#2e86c1;font-weight:700">¥4,500</td></tr>
+          <tr><td>4品</td><td style="text-align:right;color:#2e86c1;font-weight:700">¥3,500</td><td style="text-align:right;color:#2e86c1;font-weight:700">¥5,000</td></tr>
+          <tr><td>5品〜</td><td style="text-align:right;color:#2e86c1;font-weight:700">要相談</td><td style="text-align:right;color:#2e86c1;font-weight:700">要相談</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:11px;color:#888;line-height:1.7;margin-bottom:8px">
+        ※ 食材費はお客様のご負担となります。<br>
+        ※ 包丁・調理器具はお客様のものをお借りします。まな板シートはスタッフが持参します。<br>
+        ※ ご飯炊きは全コース無料サービス！（炊飯器ご使用の場合。鍋・土鍋・圧力鍋は対応不可）<br>
+        ※ カレー・シチュー・丼もの・オムライス・揚げ物など手間のかかるボリューム料理は2品換算となります。<br>
+        ※ 上記以外のメニューや特殊なご要望はお気軽にご相談ください。<br>
+        ※ 作業開始前に食材の状態を確認させていただきます。賞味期限・消費期限が切れているものや、鮮度に著しく問題のある食材は使用をお断りする場合がございます🙏
+      </p>
+      <p style="font-size:11px;font-weight:700;color:#555;margin-bottom:4px">🔄 定期コース利用時の作り置きについて</p>
+      <p style="font-size:11px;color:#888;line-height:1.7">
+        定期コースでの作り置きはご利用時間内で作れるだけとなります。<br>
+        時間内に仕上げるため時短メニュー中心となり、スポットコースと比べてメニューのバリエーションが限られる場合がございます。あらかじめご了承ください。
+      </p>
+    </div>
+    <div style="margin-top:16px;background:#EBF4FB;border-radius:10px;padding:14px 16px">
+      <p style="font-size:12px;font-weight:700;color:#5BAEE8;margin-bottom:6px">🏨 ホテル・施設へのスポット清掃も承ります</p>
+      <p style="font-size:12px;color:#555;line-height:1.8">
+        繁忙期の客室清掃や、人手が足りない時のスポット応援など、ホテル・宿泊施設からのご依頼も歓迎です。<br>
+        元ホテル清掃リーダー経験者スタッフが対応しますので、業務水準に合わせた清掃が可能です。<br>
+        <b>まずはお気軽にご相談ください😊</b>
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">
+        <span class="tag tag-blue">🛏️ 客室清掃（スポット）</span>
+        <span class="tag tag-blue">🏨 繁忙期応援</span>
+        <span class="tag tag-blue">✨ 施設スポット清掃</span>
+      </div>
+      <p style="font-size:12px;color:#888;margin-top:10px">💴 料金：内容・規模・時間により異なります。まずはご相談ください。</p>
+    </div>
+    <p class="price-note" style="margin-top:12px">案内に記載のないご要望もお気軽にご相談ください😊</p>
+  </div>
+
+  <!-- 草取り・雪かき -->
+  <div class="card">
+    <div class="card-title">🌿 草取り・雪かき</div>
+    <p class="section-desc">家事の延長として、お庭の草取りや雪かきにも対応しています。料金は通常の時間コースと同じです。</p>
+
+    <p style="font-size:13px;font-weight:700;color:#5BAEE8;margin:12px 0 6px">🔧 使用器具について</p>
+    <p style="font-size:12px;color:#555;line-height:1.8;margin-bottom:8px">
+      かま・枝切り鋏など基本的な器具はスタッフが持参します。<br>
+      お客様ご自身の道具をお使いになりたい場合はお気軽にお申し付けください。
+    </p>
+
+    <p style="font-size:13px;font-weight:700;color:#5BAEE8;margin:12px 0 6px">🗑️ 草・雪の処理について</p>
+    <p style="font-size:12px;color:#555;line-height:1.8;margin-bottom:4px">
+      刈り取った草はゴミ袋に詰めてお渡しします（処分はお客様にてお願いします）。<br>
+      雪はお客様のご指定の場所に積みます。
+    </p>
+    <div class="price-note" style="background:#EBF4FB;border-left:3px solid #5BAEE8;padding:8px 12px;margin:8px 0;border-radius:4px">
+      💡 <strong>ゴミ袋について</strong><br>
+      ゴミ袋が必要な場合、スタッフが持参することも可能です。<br>
+              市の指定の袋をご用意いたします（大サイズ1袋200円）。<br>
+      <span style="color:#e67e22">お客様ご自身でご用意いただくとお得です！</span>
+    </div>
+
+    <p style="font-size:13px;font-weight:700;color:#e67e22;margin:12px 0 6px">⚠️ ご注意・お願い</p>
+    <div style="font-size:12px;color:#555;line-height:1.8;">
+      <div class="note-item"><span class="note-icon">🌱</span>本サービスは家事の延長としての対応です。造園・庭師の専門技術とは異なりますのであらかじめご了承ください。</div>
+      <div class="note-item"><span class="note-icon">🚫</span><strong>刈らないでほしい場所・残してほしい植物は必ず事前にお伝えください。</strong>お伝えいただけなかった場合のトラブルは責任を負いかねます。</div>
+      <div class="note-item"><span class="note-icon">❄️</span><strong>雪かきの際は、雪を捨てる・積む場所をあらかじめご確保・ご指定ください。</strong>場所が確保できていない場合、作業をお断りする場合がございます。</div>
+      <div class="note-item"><span class="note-icon">📝</span>作業前に一緒にお庭を確認させていただきますのでご安心ください。</div>
+    </div>
+  </div>
+
+  <!-- お使い・買い物代行 -->
+  <div class="card">
+    <div class="card-title">🛒 お使い・買い物代行</div>
+    <p class="section-desc">「あれを買ってきてほしい」というご依頼にも対応しています。惣菜・日用品・食材など、お気軽にご相談ください。</p>
+
+    <div class="table-wrap">
+      <table class="price-table">
+        <thead><tr><th>種別</th><th>料金</th></tr></thead>
+        <tbody>
+          <tr><td>通常（1袋で持てる量）<br><span style="font-size:11px;color:#888">文具・日用品・軽い食品など</span></td><td><strong>¥1,000</strong></td></tr>
+          <tr><td>重量物（両手で抱える量）<br><span style="font-size:11px;color:#888">米・飲料ケース・灯油缶・まとめ買いなど</span></td><td><span class="price-monitor">¥1,000（モニター価格）</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="price-note" style="background:#EBF4FB;border-left:3px solid #5BAEE8;padding:8px 12px;margin:12px 0 4px;border-radius:4px;font-size:12px;color:#555;line-height:1.8">
+      💡 「1袋で持てる量か、両手で抱える量か」が目安です。迷ったらお気軽にご相談ください。<br>
+      購入金額はお客様のご負担となります。レシートは必ずお渡しし、お釣りはその場で返却いたします。
+    </div>
+  </div>
+
+  <!-- スタッフ紹介 -->
+  <div class="card section-anchor" id="staff">
+    <div class="card-title">👩‍👦 スタッフ紹介</div>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <div class="staff-icon">👩</div>
+        <div class="staff-name" style="color:#2e86c1">女性スタッフ</div>
+        <div class="staff-desc">
+          料理・作り置き／洗濯・アイロン<br>
+          ベビーシッター・お子さまの見守り
+          <div style="margin-top:6px">
+            <span class="tag tag-blue">保育士（国家資格）</span>
+            <span class="tag tag-blue">幼稚園教諭免許</span>
+            <span class="tag tag-blue">ホテル清掃経験あり</span>
+            <span class="tag tag-blue">アパレル経験あり</span>
+            <span class="tag tag-blue">子育て経験あり</span>
+          </div>
+        </div>
+      </div>
+      <div class="staff-card">
+        <div class="staff-icon">👨</div>
+        <div class="staff-name" style="color:#e67e22">男性スタッフ</div>
+        <div class="staff-desc">
+          清掃全般（高スキル）<br>
+          軽微な修繕
+          <div style="margin-top:6px">
+            <span class="tag tag-orange">元ホテル清掃リーダー</span>
+            <span class="tag tag-orange">某有名清掃チェーン店 勤務実績あり</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 対応エリア -->
+  <div class="card section-anchor" id="area">
+    <div class="card-title">📍 対応エリア・交通費</div>
+    <div class="area-row">
+      <span class="area-name">🏙️ 函館市内</span>
+      <span class="area-fee">交通費無料</span>
+    </div>
+    <div class="area-row">
+      <span class="area-name">🏘️ 北斗市・七飯町</span>
+      <span class="area-fee">1,000円〜</span>
+    </div>
+    <div class="area-row">
+      <span class="area-name">🗺️ その他道南エリア</span>
+      <span class="area-fee">3,000円〜</span>
+    </div>
+    <p class="price-note" style="margin-top:10px">※ エリア外のご依頼もお気軽にご相談ください。</p>
+  </div>
+
+  <!-- 受付時間 -->
+  <div class="card">
+    <div class="card-title">🕙 受付時間・営業について</div>
+    <div class="row">
+      <span class="row-label">受付時間</span>
+      <span class="row-value">10:00 〜 17:00</span>
+    </div>
+    <div class="row">
+      <span class="row-label">営業時間</span>
+      <span class="row-value">不定休・お客様のご希望時間に合わせてご対応します</span>
+    </div>
+    <div class="row">
+      <span class="row-label">対応曜日</span>
+      <span class="row-value">要相談（お気軽にお問い合わせください）</span>
+    </div>
+  </div>
+
+  <!-- お支払い -->
+  <div class="card">
+    <div class="card-title">💳 お支払い方法</div>
+    <div class="pay-grid">
+      <div class="pay-card">
+        <div class="pay-icon">💴</div>
+        <div class="pay-label">現金</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ご利用の流れ -->
+  <div class="card section-anchor" id="flow">
+    <div class="card-title">📋 ご利用の流れ</div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:13px">
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <div style="background:#5BAEE8;color:#fff;font-weight:700;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</div>
+        <div><span style="font-weight:700;color:#1a6fa8">作業内容・箇所の確認</span><br><span style="color:#555;font-size:12px">ご希望の作業内容や箇所をスタッフと一緒に確認します。</span></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <div style="background:#5BAEE8;color:#fff;font-weight:700;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</div>
+        <div><span style="font-weight:700;color:#1a6fa8">同意書へのご記入・署名</span><br><span style="color:#555;font-size:12px">サービス内容・料金・注意事項をご確認いただき、同意書にご署名をお願いします。</span></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <div style="background:#5BAEE8;color:#fff;font-weight:700;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</div>
+        <div><span style="font-weight:700;color:#1a6fa8">お支払い・領収書のお渡し</span><br><span style="color:#555;font-size:12px">作業前に現金にてお支払いをお願いしております。領収書をお渡しします。</span></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <div style="background:#5BAEE8;color:#fff;font-weight:700;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">4</div>
+        <div><span style="font-weight:700;color:#1a6fa8">作業開始</span><br><span style="color:#555;font-size:12px">ご在宅のまま、スタッフが丁寧に作業いたします。</span></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <div style="background:#5BAEE8;color:#fff;font-weight:700;font-size:11px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">5</div>
+        <div><span style="font-weight:700;color:#1a6fa8">仕上がり確認</span><br><span style="color:#555;font-size:12px">作業完了後、スタッフと一緒に作業箇所をご確認いただきます。ご満足いただけましたらお声がけください🐾</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- キャンセルポリシー -->
+  <div class="card">
+    <div class="card-title">📋 キャンセルポリシー</div>
+    <div class="cancel-row">
+      <span class="cancel-label">2日前以上のキャンセル</span>
+      <span class="cancel-fee-good">無料</span>
+    </div>
+    <div class="cancel-row">
+      <span class="cancel-label">前日のキャンセル</span>
+      <span class="cancel-fee-bad">料金の 50%</span>
+    </div>
+    <div class="cancel-row">
+      <span class="cancel-label">当日のキャンセル</span>
+      <span class="cancel-fee-bad">料金の 100%</span>
+    </div>
+    <div class="cancel-good-row">
+      <span style="color:#27ae60;font-weight:600;font-size:13px">🌿 お客様の体調不良によるキャンセル</span>
+      <span class="cancel-fee-good">無料（日程変更扱い・2回まで）</span>
+    </div>
+    <div class="cancel-good-row" style="margin-top:6px">
+      <span style="color:#27ae60;font-weight:600;font-size:13px">🌿 当方都合でのキャンセルの場合</span>
+      <span class="cancel-fee-good">次回 50% OFF ＋ 優先予約</span>
+    </div>
+    <p style="font-size:12px;color:#888;margin-top:12px;line-height:1.8;">※ キャンセル料のお支払いが確認できない場合は、やむを得ず今後のご予約をお断りさせていただく場合がございます。</p>
+  </div>
+
+  <!-- 注意事項 -->
+  <div class="card">
+    <div class="card-title">⚠️ ご利用にあたっての注意事項　―　必ずお読みください！</div>
+    <div class="note-list">
+      <div class="note-item"><span class="note-icon">🏠</span>基本的にご在宅中にお伺いします。</div>
+      <div class="note-item"><span class="note-icon">💧</span>作業時にお客様の水道・電気を使用させていただきます。</div>
+      <div class="note-item"><span class="note-icon">📞</span>作業中はお電話に出られない場合がございますが、必ず折り返しご連絡いたします。</div>
+      <div class="note-item"><span class="note-icon">💎</span>作業中の貴重品・現金の管理はお客様ご自身でお願いします。</div>
+      <div class="note-item"><span class="note-icon">✅</span>作業完了後、スタッフご退去前に必ず仕上がりをご確認ください。退去後のクレームはお受けできかねます。</div>
+      <div class="note-item"><span class="note-icon">📝</span>作業前に既存の破損・傷がある箇所は事前にお申し出ください。</div>
+      <div class="note-item"><span class="note-icon">🐾</span>ペットがいる場合は事前にご連絡ください。ペットの安全のため、作業中は別室またはケージに入れていただけますと幸いです😊</div>
+      <div class="note-item"><span class="note-icon">🚗</span>車1台分の駐車スペースのご確保をお願いします。</div>
+      <div class="note-item"><span class="note-icon">🧹</span>特殊清掃や過度に汚れている場合は、別途料金が発生する場合またはご対応をお断りする場合があります。</div>
+      <div class="note-item"><span class="note-icon">💬</span>案内に記載のないご要望もお気軽にご相談ください。できる限り対応いたします！</div>
+      <div class="note-item"><span class="note-icon">🚫</span>スタッフへの暴言・威圧・過度なクレーム等のカスタマーハラスメントに対しては、毅然とした態度で対応させていただきます。悪質な行為が確認された場合は、以降のサービス提供を永久にお断りする場合があります。</div>
+      <div class="note-item"><span class="note-icon">🕐</span>前のお客様のご対応状況により、ご訪問時間が前後する場合がございます。あらかじめご了承ください。</div>
+      <div class="note-item"><span class="note-icon">⛔</span>反社会的勢力・暴力団関係者の方へのサービス提供はお断りしております。</div>
+    </div>
+  </div>
+
+  <!-- お問い合わせ -->
+  <div class="card section-anchor" id="contact">
+    <div class="card-title">📩 お問い合わせ・ご予約</div>
+    <div class="contact-list">
+      <a class="contact-item link-item" href="https://line.me/R/ti/p/@323vzpet" target="_blank" rel="noopener">
+        <span class="contact-icon">📱</span>
+        <div>
+          <div class="contact-label">LINE 公式アカウント</div>
+          <div class="contact-value">@323vzpet</div>
+        </div>
+      </a>
+      <a class="contact-item link-item" href="tel:09050403428">
+        <span class="contact-icon">📞</span>
+        <div>
+          <div class="contact-label">お電話（折り返し対応可）</div>
+          <div class="contact-value">090-5040-3428</div>
+        </div>
+      </a>
+      <a class="contact-item link-item" href="mailto:samoyed.housekeeping@gmail.com">
+        <span class="contact-icon">📧</span>
+        <div>
+          <div class="contact-label">メール</div>
+          <div class="contact-value">samoyed.housekeeping@gmail.com</div>
+        </div>
+      </a>
+    </div>
+    <p class="price-note" style="margin-top:14px;text-align:center">受付時間：10:00 〜 17:00　まずはお気軽にご連絡ください😊</p>
+  </div>
+
+  <!-- フッターCTA -->
+  <div class="footer-cta">
+    <h2>まずはお気軽にご相談ください🐾</h2>
+    <p>LINE・お電話・メールで受け付けています</p>
+    <a href="#contact" class="btn btn-primary">お問い合わせはこちら</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  🐾 家事＆清掃代行サービス サモエド　© 2026
+  <div class="footer-links">
+    <a href="#price">料金</a>
+    <a href="#staff">スタッフ</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</div>
+
+</body>
+</html>
